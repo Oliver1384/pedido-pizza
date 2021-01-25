@@ -32,12 +32,12 @@ h2{
    margin-right: 47rem;
 }
 
-div.titulo h1 p:first-child{
+h1 p:first-child{
     margin-top: 1rem;
     color: red;
 }
 
-div.titulo h1 p:nth-child(2n){
+ h1 p:nth-child(2n){
     color: green;
 }
 
