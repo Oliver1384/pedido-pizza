@@ -1,0 +1,146 @@
+*,*::after,*::before{
+	box-sizing: border-box;
+	margin:0;
+	border:0;
+}
+html{
+    background-image: url(/img/fondo.jpg);
+    
+    background-size: cover;
+}
+
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid red;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: rgb(238, 216, 92, 0.5);
+}
+
+div.titulo, form {
+    display:flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+
+h2{
+    margin-top: 1rem;
+   margin-right: 47rem;
+}
+
+div.titulo h1:first-child{
+    margin-top: 1rem;
+    color: red;
+}
+
+div.titulo h1:nth-child(2n){
+    color: green;
+}
+
+fieldset{
+    border: 3px solid rgb(175, 172, 172);
+    border-radius: 5px;
+    margin-top: 2rem;
+    min-width: 90%;
+    padding: 2rem;
+    background-color: rgb(195, 110, 30, 0.8);
+}
+
+textarea{
+    border:1px solid rgb(136, 132, 132);
+    border-radius: 5px;
+}
+
+.botonEnviar {
+    background-color: rgb(236, 67, 25, 0.8);
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid rgb(121, 116, 116);
+    margin: 2rem;
+    margin-left: 47rem;
+}
+
+div.oferta{
+    margin-top: 1rem;
+    margin-right: 47rem;
+}
+
+select{
+    border: 1px solid rgb(122, 121, 121);
+    padding: 0.1rem;
+    border-radius: 5px;
+}
+
+
+fieldset.ingredientes div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+fieldset.tamaño{
+    display: flex;
+    justify-content: space-around;
+}
+
+p.horaEntrega{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+p.horaEntrega input{
+    padding: 0.2rem;
+    border-radius:5px;
+    max-width: 5rem;
+    border: 1px solid rgb(177, 169, 169);
+}
+
+
+fieldset.entrega > *{
+    padding: 0.4rem;
+}
+
+.cliente{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.cliente input {
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+textarea[id ="direccion"]{
+    resize: vertical;
+}
+
+input:required {
+    background-color: green;
+}
+
+input:invalid {
+    background-color: orange;
+}
+
+form:invalid input[type="submit"]{
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.botonEnviar:hover{
+    box-shadow: 1px -1px 0 1px #444;
+    text-shadow: 1px 1px 0 #AAA;
+}
+
+.claveSecreta {
+    background-color: rgb(195, 110, 30, 0.8);
+    padding:1rem;
+    border-radius: 5px 5px;
+    border: 1px solid rgb(173, 173, 173);
+}

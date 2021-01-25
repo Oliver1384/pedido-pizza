@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Artiles Ortega</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+   
+    <form>
+        <div class="titulo">
+            <h1>Restaurante</h1>
+            <h1>La buena pizza</h1>
+            <h2>Pedido de pizza</h2>
+        </div>
+        <fieldset class="ingredientes">
+            <!--legend: titulo de un fieldset-->
+            <legend>ingredientes</legend>
+            <div>
+                <p>
+                    <input type="radio" name="size" id="size_1" value="queso">
+                    <label for="size_1">queso</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_2" value="atun">
+                    <label for="size_2">atun</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_3" value="pimiento">
+                    <label for="size_3">pimiento</label>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="radio" name="size" id="size_4" value="cebolla">
+                    <label for="size_4">cebolla</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_5" value="gambas">
+                    <label for="size_5">gambas</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_6" value="salchicha">
+                    <label for="size_6">salchicha</label>
+                </p>
+             </div>
+             <label for="size_7">Otros:</label>
+            <p>
+                <textarea  name="size" id="otros" cols="95" rows="15"  placeholder="indicar otrasindicar otros ingredients u otras indicaciones para tu pizza..."></textarea>
+            </p>
+        </fieldset>
+        <fieldset class="tamaño">
+            <!--legend: titulo de un fieldset-->
+            <legend>tamaño</legend>
+
+            <p>
+                <input type="radio" name="size" id="size_1" value="pequeña">
+                <label for="size_1">pequeña</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_2" value="mediana">
+                <label for="size_2">mediana</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_3" value="grande">
+                <label for="size_3">grande</label>
+            </p>
+        </fieldset>
+        <fieldset class="entrega">
+            <!--legend: titulo de un fieldset-->
+            <legend>entrega</legend>
+
+            <p class="cliente">
+                <label for="size_1">cliente</label>
+                <input type="text" name="size" id="cliente" required minlength="5" maxlength="20">
+            </p>
+            <label for="size_2">dirección</label>
+            <p>
+                <textarea  required name="size" id="size_2" cols="95" rows="15"></textarea>
+            </p>
+            <p class="horaEntrega">
+                <label for="size_3">Hora de entrega</label>
+                <input type="time" name="size" id="hora"  min="21:00" max="00:00" required>
+            </p>
+        </fieldset>
+        <div class ="oferta">
+            <label for="oferta">Escoger oferta</label>
+            <select id="miOferta" name="oferta">
+                <option value="2por1">2 por 1</option>
+                <option value="3por1">3 por 1</option>
+                <option value="4por2">4 por 2</option>
+            </select>
+        </div>
+        <p class="claveSecreta">
+            <label>clave secreta</label>
+            <input type="text" name="clave" requirid pattern="[a-zA-z]{4}" required>
+        </p>
+        <input type="submit" value="realizar pedido" class="botonEnviar">
+    </form>
+  
+</body>
+</html>
