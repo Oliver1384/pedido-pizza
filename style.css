@@ -55,13 +55,16 @@ textarea{
     border-radius: 5px;
 }
 
-.botonEnviar {
-    background-color: rgb(236, 67, 25, 0.8);
+input.botonEnviar {
+    background-color: rgb(14, 67, 224);
     border-radius: 5px;
     padding: 1rem;
     border: 1px solid rgb(121, 116, 116);
     margin: 2rem;
     margin-left: 47rem;
+    color: rgb(62, 224, 34);
+    font-size: large;
+    font-weight: bold;
 }
 
 div.oferta{
