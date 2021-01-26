@@ -56,7 +56,6 @@ textarea{
 }
 
 input.botonEnviar {
-    background-color: rgb(14, 67, 224);
     border-radius: 5px;
     padding: 1rem;
     border: 1px solid rgb(121, 116, 116);
@@ -133,7 +132,7 @@ input:invalid {
 }
 
 form:invalid input[type="submit"]{
-    background-color: red;
+    background-color: rgb(47, 0, 255);
     cursor: not-allowed;
 }
 
