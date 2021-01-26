@@ -15,6 +15,12 @@ html{
     
   }
 
+  input[type=radio]:focus  {
+    width: 100px;
+    transition: ease-in-out, width .35s ease-in-out;
+   
+  }
+
 
 body{
     max-width: 1024px;
