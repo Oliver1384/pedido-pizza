@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 </head>
 <body>
-   
+    <div class="titulo">
+        <h1><p>Restaurante</p>
+        <p>La buena pizza</p></h1>
+        <img src="img/bandera.svg" alt="Bandera de Italia" width="100" height="100"> 
+        <h2>Pedido de pizza</h2>
+    </div>
     <form>
-        <div class="titulo">
-            <h1><p>Restaurante</p>
-            <p>La buena pizza</p></h1>
-            <img src="img/bandera.svg" alt="Bandera de Italia" width="100" height="100"> 
-            <h2>Pedido de pizza</h2>
-        </div>
-     
         <fieldset class="ingredientes">
             <!--legend: titulo de un fieldset-->
             <legend>ingredientes</legend>
@@ -86,23 +84,25 @@
                 <label for="hora">Hora de entrega</label>
                 <input type="time" name="hora" id="hora" value="hora" min="21:00" max="00:00" required>
             </p>
+            <div class ="oferta">
+                <label for="miOferta">Escoger oferta</label>
+                <select id="miOferta">
+                    <label for="2por1">2 por 1</label>
+                    <option  id="2por1" name="2por1">2 por 1</option>
+                    <label for="3por1">3 por 1</label>
+                    <option  id="3por1" name="3por1">3 por 1</option>
+                    <label for="4por2">4 por 2</label>
+                    <option  id="4por2" name="4por2">4 por 2</option>
+                </select>
+            </div>
+            <p class="claveSecreta">
+                <label for ="password">clave secreta</label>
+                <input id ="password" type="text" name="clave" rpattern="[a-zA-z]{4}" required>
+            </p>
+            <input type="submit" value="realizar pedido" class="botonEnviar">
         </fieldset>
-        <div class ="oferta">
-            <label for="miOferta">Escoger oferta</label>
-            <select id="miOferta">
-                <label for="2por1">2 por 1</label>
-                <option  id="2por1" name="2por1">2 por 1</option>
-                <label for="3por1">3 por 1</label>
-                <option  id="3por1" name="3por1">3 por 1</option>
-                <label for="4por2">4 por 2</label>
-                <option  id="4por2" name="4por2">4 por 2</option>
-            </select>
-        </div>
-        <p class="claveSecreta">
-            <label for ="password">clave secreta</label>
-            <input id ="password" type="text" name="clave" rpattern="[a-zA-z]{4}" required>
-        </p>
-        <input type="submit" value="realizar pedido" class="botonEnviar">
+        
+        
     </form>
   
 </body>
